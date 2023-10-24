@@ -28,6 +28,7 @@ for num_CV = 2:K_CV
         s = 0;
         C_end = 2^19;
         len1 = 1;
+        % search C
         for i = 1:100000
             if C > C_end
                 break;
@@ -55,6 +56,7 @@ for num_CV = 2:K_CV
         s = 0;
         C_star_end = C;
         len1 = 1;
+        % search C*
         for i = 1:100000
             if C_star > C_star_end
                 break;
@@ -72,6 +74,7 @@ for num_CV = 2:K_CV
         s = -1;
         s_end = 0;
         len1 = 1;
+        % search s
         for i = 1:100000
             if s > s_end
                 break;
