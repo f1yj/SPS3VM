@@ -35,6 +35,7 @@ elseif any(p < 0 | p > 100) || ~isreal(p)
           'P must take real values between 0 and 100');
 end
 
+
 % Figure out which dimension prctile will work along.
 sz = size(x);
 if nargin < 3 

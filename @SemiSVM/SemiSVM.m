@@ -6,15 +6,15 @@ classdef SemiSVM
         label_size = 0;
         unlabel_size = 0;
         active_size=0;
-        iteration=0;    %杩唬娆℃暟
+        iteration=0;    %迭代次数
         x=[];
         y=[];
-        KKT=0;          %kkt鏉′欢锟??浠ｈ〃涓嶆弧瓒筹紝1浠ｈ〃婊¤冻
+        KKT=0;          %kkt条件 0 代表不满足，1代表满足
         local_minimal=0;
-        index_M=[];     %M闆嗗悎
-        index_E=[];     %E闆嗗悎
-        index_O=[];     %O闆嗗悎
-        index_V=[];     %V闆嗗悎
+        index_M=[];     %M集合
+        index_E=[];     %E集合
+        index_O=[];     %O集合
+        index_V=[];     %V集合
         steps=0;
         change_mu=0;
         change_zeta=0;
@@ -576,3 +576,4 @@ classdef SemiSVM
         end
     end
 end
+

@@ -20,3 +20,4 @@ b_h2 = boxplotCsub(cost.B, 1,'x',1,1,[0.24, 0.35, 0.67],false,1.5,false,[2 5],1.
 ylabel('Accuracy');
 set(gca, 'xticklabel',datasets);
 legend( [b_h1(1,4) b_h2(2,4)], {'SPS^{3}VM', 'Grid Search'}, 'Location', 'N');
+

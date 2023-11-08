@@ -7,3 +7,4 @@ function [per]=getAcc(y1,y2)
     end
     per = count/length(y1);
 end
+

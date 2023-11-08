@@ -5,6 +5,7 @@ global KTYPE KSCALE C C_star s data_flag C_end s_end
 KTYPE = 6;
 result_GS = {};
 data_flag = 'ijcnn1';
+
 K_CV = 5;
 num_step = 1;
 num_size = 1;

@@ -4,8 +4,9 @@ global KTYPE KSCALE C C_star data_flag C_end s C_star_end s_end
 % use RBF kernel in SemiSVM.Kernel
 KTYPE = 6;
 result_SP = {};
-data_flag = 'ijcnn1';
+data_flag = 'dota2';
 size_data = 9000;
+
 K_CV = 5;
 for num_CV = 2:K_CV
     KSCALE = 0.01;
@@ -28,7 +29,6 @@ for num_CV = 2:K_CV
         s = 0;
         C_end = 2^19;
         len1 = 1;
-        % search C
         for i = 1:100000
             if C > C_end
                 break;
@@ -56,7 +56,6 @@ for num_CV = 2:K_CV
         s = 0;
         C_star_end = C;
         len1 = 1;
-        % search C*
         for i = 1:100000
             if C_star > C_star_end
                 break;
@@ -74,7 +73,6 @@ for num_CV = 2:K_CV
         s = -1;
         s_end = 0;
         len1 = 1;
-        % search s
         for i = 1:100000
             if s > s_end
                 break;

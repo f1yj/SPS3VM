@@ -9,6 +9,7 @@ function out=SemiSVMCall(original_x,original_y,x,y)
     NowLowBound=PreLowBound;
     NowUppBound=PreUppBound;
     tempCount = 0;
+    
     while terminal_flag==0
         objcs=SemiSVM(x,y,NowLowBound,NowUppBound,0);
         PreLowBound=NowLowBound;
